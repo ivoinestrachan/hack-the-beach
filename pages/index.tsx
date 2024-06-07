@@ -18,7 +18,7 @@ const Index = () => {
       const containerHeight = window.innerHeight;
 
       y += vy;
-      x += vx; // Add horizontal movement
+      x += vx;
 
       if (x + ballRect.width >= containerWidth || x <= 0) {
         vx = -vx + (Math.random() - 0.5) * 2; 
@@ -39,7 +39,7 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="relative min-h-screen overflow-hidden">
+    <div className="relative min-h-screen overflow-hidden bg-[url('../assets/beach.svg')]">
       <div className="absolute top-0 left-0 right-0 bottom-0">
         <Image
           src={beach_ball}
