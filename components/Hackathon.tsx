@@ -1,7 +1,7 @@
 const Hackathon = () => {
   return (
-    <div id="hack" className="h-[100vh]">
-      Enter
+    <div id="hack">
+     <div className="text-center mt-5 font-extrabold text-[32px]">A Hackathon on a Beach?</div>
     </div>
   );
 }
