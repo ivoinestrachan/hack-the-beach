@@ -7,6 +7,9 @@
     text-wrap: balance;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .bouncing-ball {
   @apply absolute ;
@@ -17,3 +20,6 @@
 }
 
 
+body {
+  cursor: none;
+}

@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
-import cursorImage from '../assets/cursor.png'
-import Image from 'next/image';
+import cursorImage from '../assets/diver.svg'
 
 const Cursor = () => {
   useEffect(() => {
