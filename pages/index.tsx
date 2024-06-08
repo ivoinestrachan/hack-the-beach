@@ -1,8 +1,23 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import beach_ball from "../assets/ball.webp";
+import sand from "../assets/sand.svg";
 
 const Index = () => {
+  const [scrollDepth, setScrollDepth] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const depth = window.scrollY;
+      setScrollDepth(depth);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   useEffect(() => {
     const ball = document.querySelector(".bouncing-ball") as HTMLElement | null;
     if (!ball) return;
@@ -39,7 +54,16 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="relative min-h-screen overflow-hidden bg-[url('../assets/beach.svg')]">
+    <div className="relative min-h-screen overflow-x-hidden">
+      <video 
+        autoPlay 
+        loop 
+        muted 
+        className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
+      >
+        <source src="water.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       <div className="absolute top-0 left-0 right-0 bottom-0">
         <Image
           src={beach_ball}
@@ -50,9 +74,21 @@ const Index = () => {
         />
       </div>
       <div className="flex items-center justify-center h-screen">
-        <div className="text-center font-extrabold text-[60px] z-10 text-3d">
+        <div className="text-center font-extrabold text-[60px] text-yellow-300">
           Hack The Beach
         </div>
+      </div>
+      
+      <div className="fixed top-0 right-0 mt-10 mr-4 flex flex-col space-y-4">
+        {Array.from({ length: 30 }, (_, index) => (
+          <div
+            key={index}
+            className="w-20 h-10 bg-blue-500 flex items-center justify-center text-white z-10"
+            style={{ opacity: scrollDepth > index * 200 ? 1 : 0.5 }}
+          >
+            {index * 10} ft
+          </div>
+        ))}
       </div>
     </div>
   );
