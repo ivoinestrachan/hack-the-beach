@@ -61,7 +61,7 @@ const Index = () => {
       <video 
         autoPlay 
         loop 
-        muted 
+        muted  
         controls
         className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
       >
