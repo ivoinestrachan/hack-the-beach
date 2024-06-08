@@ -62,7 +62,6 @@ const Index = () => {
         autoPlay 
         loop 
         muted  
-        controls
         className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
       >
         <source src="https://cloud-ajdh27epl-hack-club-bot.vercel.app/0underwater_ocean_waves.mp4" type="video/mp4" />
