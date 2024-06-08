@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import beach_ball from "../assets/ball.webp";
-import sand from "../assets/sand.svg";
+import Cursor from "@/components/Cursor";
+import About from "@/components/About";
+import Register from "@/components/Register";
 
 const Index = () => {
   const [scrollDepth, setScrollDepth] = useState(0);
@@ -55,6 +57,7 @@ const Index = () => {
 
   return (
     <div className="relative min-h-screen overflow-x-hidden">
+     <Cursor />
       <video 
         autoPlay 
         loop 
@@ -62,7 +65,7 @@ const Index = () => {
         className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
       >
         <source src="water.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
+       not working on your browser
       </video>
       <div className="absolute top-0 left-0 right-0 bottom-0">
         <Image
@@ -74,7 +77,7 @@ const Index = () => {
         />
       </div>
       <div className="flex items-center justify-center h-screen">
-        <div className="text-center font-extrabold text-[60px] text-yellow-300">
+        <div className="text-center font-extrabold sm:text-[60px] text-[40px] text-yellow-300">
           Hack The Beach
         </div>
       </div>
@@ -90,6 +93,7 @@ const Index = () => {
           </div>
         ))}
       </div>
+   
     </div>
   );
 };
