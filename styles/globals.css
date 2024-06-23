@@ -11,15 +11,11 @@ html {
   scroll-behavior: smooth;
 }
 
-.bouncing-ball {
-  @apply absolute ;
-}
 
-.bouncing-container {
-  @apply relative w-full h-full overflow-hidden;
+body{
+  background-image: url("../assets/water.svg");
+  background-size: cover;
 }
 
 
-body {
-  cursor: none;
-}
+
