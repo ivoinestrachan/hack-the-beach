@@ -15,6 +15,7 @@ html {
 body{
   background-image: url("../assets/water.svg");
   background-size: cover;
+  height: 100vh;
 }
 
 

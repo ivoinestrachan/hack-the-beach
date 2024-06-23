@@ -1,16 +1,25 @@
 import Image from "next/image";
 import boat from "../assets/boat1.svg";
-import strokes from "../assets/strokes.svg";
+import Section1 from "@/components/section1";
+import Section2 from "@/components/section2";
+
 
 const index = () => {
   return (
     <div>
-      <div className="bg-gradient-to-r from-yellow-500 to-transparent h-[40vh] opacity-50 relative z-10 "></div>
-   
-
-      <div className="flex items-center justify-center">
-        <Image src={boat} alt="boat" className="absolute" />
+    <div>
+      <div className="bg-gradient-to-b from-yellow-500 to-transparent h-[100vh] opacity-50 relative z-10 "></div>
+      <div className="relative">
+    
+      <div className="flex items-center justify-center ">
+        <Image src={boat} alt="boat" className="absolute bottom-[200px] sm:left-[10rem]" />
       </div> 
+     
+
+   </div>
+    </div>
+    <Section1 />
+    <Section2 />
     </div>
   );
 };
