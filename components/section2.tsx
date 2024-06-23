@@ -33,7 +33,7 @@ const Section2 = () => {
 
       <div className="text-center flex justify-center pt-10"></div>
       <div className="sm:flex items-center justify-center gap-[100px] mt-20">
-        <div className="bg-[#FFEAC7] w-[500px] py-10 rounded-[12px]">
+        <div className="bg-[#FFEAC7] w-[500px] rounded-[12px]  py-10">
           <div className="text-[#E17E23] text-[32px] league text-center">
             What is a hackathon?
           </div>
