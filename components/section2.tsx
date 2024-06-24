@@ -2,12 +2,12 @@ import flowers from "../assets/flowers.svg";
 import Image from "next/image";
 const Section2 = () => {
   return (
-    <div className="bg-[url('/sand.svg')] h-[100vh] bg-cover ">
+    <div className="bg-[url('/sand.svg')] sm:h-[100vh] h-[150vh] bg-cover ">
       <div className="text-center flex justify-center pt-10">
         <Image src={flowers} alt="flowers" fetchPriority="high" />
       </div>
       <div className="sm:flex items-center justify-center gap-[100px] mt-20">
-        <div className="bg-[#FFEAC7] w-[500px] py-10 rounded-[12px] h-[30.12vh] overflow-hidden flex flex-col justify-center">
+        <div className="bg-[#FFEAC7] sm:w-[500px] py-10 rounded-[12px] h-[30.12vh] overflow-hidden flex flex-col justify-center">
           <div className="text-[#E17E23] text-[32px] league text-center">
             What is a hackathon?
           </div>
@@ -20,7 +20,7 @@ const Section2 = () => {
           </div>
         </div>
 
-        <div className="bg-[#FFEAC7] w-[500px] rounded-[12px] h-[30.12vh] py-10 overflow-hidden flex flex-col justify-center">
+        <div className="bg-[#FFEAC7] sm:w-[500px] rounded-[12px] h-[30.12vh] py-10 overflow-hidden flex flex-col justify-center mt-10">
           <div className="text-[#E17E23] text-[32px] league text-center">
             Where?
           </div>
@@ -32,9 +32,9 @@ const Section2 = () => {
         </div>
       </div>
 
-      <div className="text-center flex justify-center pt-10"></div>
-      <div className="sm:flex items-center justify-center gap-[100px] mt-20">
-        <div className="bg-[#FFEAC7] w-[500px] rounded-[12px] py-10 h-[30.12vh] overflow-hidden flex flex-col justify-center">
+      <div className="text-center flex justify-center sm:pt-10"></div>
+      <div className="sm:flex items-center justify-center gap-[100px] mt-10">
+        <div className="bg-[#FFEAC7] sm:w-[500px] rounded-[12px] py-10 h-[30.12vh] overflow-hidden flex flex-col justify-center">
           <div className="text-[#E17E23] text-[32px] league text-center">
             How much does it cost?
           </div>
@@ -44,7 +44,7 @@ const Section2 = () => {
           </div>
         </div>
 
-        <div className="bg-[#FFEAC7] w-[500px] rounded-[12px] h-[30.12vh] py-10 overflow-hidden flex flex-col justify-center">
+        <div className="bg-[#FFEAC7] sm:w-[500px] rounded-[12px] h-[30.12vh] py-10 overflow-hidden flex flex-col justify-center mt-10">
           <div className="text-[#E17E23] text-[32px] league text-center">
             Build a boat!
           </div>
