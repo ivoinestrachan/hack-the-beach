@@ -7,7 +7,7 @@ const Lastpage = () => {
         src={orpheus}
         alt="orpheus"
         fetchPriority="high"
-        className="absolute bottom-[-1970px] sm:left-[45rem]"
+        className="absolute bottom-[-1985px] sm:left-[45rem]"
       />
     </div> 
   );
