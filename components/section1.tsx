@@ -9,6 +9,7 @@ const Section1 = () => {
          alt="sign" 
          fetchPriority="high"
          className="absolute b-10" />
+      
       <a href="https://forms.gle/DkFAzj2xiVbeirDt6">
         <Image 
           src={apply}

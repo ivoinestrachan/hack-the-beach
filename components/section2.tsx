@@ -23,7 +23,7 @@ const Section2 = () => {
             src={pinkCoral}
             alt="pinkCoral"
             fetchPriority="high"
-            className="absolute z-10 left-[55px] pt-[5rem] sm:block hidden"
+            className="absolute z-10 left-[510px] pt-[7rem] sm:block hidden"
           />
         </div>
 
@@ -45,7 +45,7 @@ const Section2 = () => {
             src={seaweed}
             alt="seaweed"
             fetchPriority="high"
-            className="absolute z-10 right-[50px] pt-[8rem] sm:block hidden"
+            className="absolute z-10 right-[480px] pt-[5rem] sm:block hidden"
           />
         </div>
       </div>
@@ -65,7 +65,7 @@ const Section2 = () => {
             src={shell}
             alt="shell"
             fetchPriority="high"
-            className="absolute z-10 left-[55px] pt-[5rem] sm:block hidden"
+            className="absolute z-10 left-[500px] pt-[8rem] sm:block hidden"
           />
         </div>
 
@@ -83,7 +83,7 @@ const Section2 = () => {
             src={flower}
             alt="flower"
             fetchPriority="high"
-            className="absolute z-10 right-[50px] pt-[0rem] sm:block hidden"
+            className="absolute z-10 right-[450px] pt-[2rem] sm:block hidden"
           />
         </div>
       </div>
