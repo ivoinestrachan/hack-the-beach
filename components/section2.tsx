@@ -67,7 +67,7 @@ const Section2 = () => {
         
       </div>
       <div className="text-center flex justify-center mt-5">
-        <Image src={flowers} alt="flowers" fetchPriority="high "/>
+        <Image src={flowers} alt="flowers" fetchPriority="high"/>
       </div>
     </div>
   );
