@@ -12,7 +12,11 @@ const index = () => {
       <div className="relative">
     
       <div className="flex items-center justify-center ">
-        <Image src={boat} alt="boat" className="absolute bottom-[200px] sm:left-[10rem]" />
+        <Image 
+        src={boat}
+         alt="boat" 
+         fetchPriority="high"
+         className="absolute bottom-[200px] sm:left-[10rem]" />
       </div> 
      
 

@@ -2,9 +2,13 @@ import flowers from "../assets/flowers.svg";
 import Image from "next/image";
 const Section2 = () => {
   return (
-    <div className="bg-[url('../assets/sand.svg')] h-[100vh] bg-cover ">
+    <div className="bg-[url('/sand.svg')] h-[100vh] bg-cover ">
       <div className="text-center flex justify-center pt-10">
-        <Image src={flowers} alt="flowers" />
+        <Image 
+        src={flowers} 
+        alt="flowers"  
+        fetchPriority="high"
+        />
       </div>
       <div className="sm:flex items-center justify-center gap-[100px] mt-20">
         <div className="bg-[#FFEAC7] w-[500px] py-10 rounded-[12px]">
