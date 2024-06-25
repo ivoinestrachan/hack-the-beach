@@ -1,5 +1,5 @@
 import Image from "next/image";
-import boat from "../assets/boat1.svg";
+import boat from "../assets/boatfish.svg";
 import Section1 from "@/components/section1";
 import Section2 from "@/components/section2";
 import Lastpage from "@/components/lastpage";
@@ -17,7 +17,7 @@ const index = () => {
               src={boat}
               alt="boat"
               fetchPriority="high"
-              className="absolute bottom-[200px] sm:left-[10rem]"
+              className="absolute bottom-[-85px] sm:left-[10rem]"
             />
             
           </div>

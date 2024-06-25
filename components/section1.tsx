@@ -1,9 +1,12 @@
 import sign from "../assets/sign3.svg";
 import apply from "../assets/apply3.svg";
+
 import Image from "next/image";
+
 const Section1 = () => {
   return (
     <div>
+
         <Image 
         src={sign}
          alt="sign" 

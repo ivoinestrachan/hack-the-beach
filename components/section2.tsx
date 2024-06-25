@@ -59,17 +59,17 @@ const Section2 = () => {
         {/********** a box **********/}
         <div className="bg-[#FFEAC7] sm:w-[500px] rounded-[12px] py-10 h-[35vh] overflow-hidden flex flex-col justify-center sm:ml-auto sm:mr-auto ml-2 mr-2">
           <div className="text-[#E17E23] text-[32px] league text-center">
-            How much does it cost?
+            Who can attend? Cost?
           </div>
-          <div className="league text-[#F4B349] text-center text-[30px]">
-            It's free! Email <br /> <a href="ivoine@hackthebeach.dev" className="underline">ivoine@hackthebeach.dev </a> <br /> for any
+          <div className="league text-[#F4B349] text-center text-[27px]">
+            This event is strictly for high schoolers and younger. It's free! Email <a href="ivoine@hackthebeach.dev" className="underline">ivoine@hackthebeach.dev </a> <br /> for any
             questions/inquiries.
           </div>
           <Image
             src={shell}
             alt="shell"
             fetchPriority="high"
-            className="absolute z-10 left-[500px] pt-[8rem] sm:block hidden"
+            className="absolute z-10 left-[535px] pt-[8rem] sm:block hidden"
           />
         </div>
 
