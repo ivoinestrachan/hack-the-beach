@@ -13,7 +13,7 @@ const Section1 = () => {
          fetchPriority="high"
          className="absolute b-10" />
       
-      <a href="https://forms.gle/DkFAzj2xiVbeirDt6">
+      <a href="https://forms.gle/WNTr5fhkB7oicV3Z7">
         <Image 
           src={apply}
           alt="apply"
