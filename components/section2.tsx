@@ -39,7 +39,7 @@ const Section2 = () => {
               Sandy Port, Bahamas!{" "}
             </a>
             <br />
-            July 17th, 2024.<br></br>
+            July 25th, 2024.<br></br>
 
             9am - 8pm{" "}
            
